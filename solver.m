@@ -16,6 +16,8 @@ plot(T,Y);
 legend("Speicies","Water")
 xlabel("Time")
 ylabel("Amount")
+c={mat2str(y0),mat2str(n),mat2str(r),mat2str(K),mat2str(a),mat2str(d),mat2str(dw),mat2str(Wn)};
+
 % solve odes
 y0 = [5,15,50]; % initial conditions
 n=2;
@@ -33,4 +35,7 @@ legend("Speicies 1","Species 2","Water")
 xlabel("Time")
 ylabel("Amount")
 
-
+% figure(3);
+% c={mat2str(y0),mat2str(n),mat2str(r),mat2str(K),mat2str(a),mat2str(d),mat2str(dw),mat2str(Wn)};
+% name = {'n','r','K','a','d','dw','Wn'};
+% uitable('Data', c, 'ColumnName', name , 'Position', [0 0 0 0];
